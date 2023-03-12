@@ -1,5 +1,28 @@
 p {
   color: orange;
-  background-color-orange;
-  font-family: "comic sans", sans;
+  background-color: orange;
+  font-family: "comic sans", sans-serif;
+}
+
+/*Common settings for the background display*/
+.flex {
+  display:flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+#ribbon {
+  background-color: blue;
+}
+
+#header {
+  background-image: none;
+}
+
+#main {
+  background-color: whitesmoke;
+}
+
+#footer{
+  background-color: goldenrod;
 }
