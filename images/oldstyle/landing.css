@@ -1,0 +1,45 @@
+/*Css for landing page*/
+
+/*S. Howe, “Learn to code HTML &amp; CSS,” Positioning Content - Learn to Code HTML &amp; CSS, n.d.. [Online]. Available: https://learn.shayhowe.com/html-css/positioning-content/. [Accessed: 08-Feb-2023]. */
+article {
+    padding: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: whitesmoke;
+    text-align: left;
+    font-family: Arial, "Century Gothic" Verdana, sans-serif;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+.pageHeading{
+    color: black;
+    background-color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Arial, "Century Gothic", Verdana, sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.articleHeading{
+    color: black;
+    font-family: Arial, "Century Gothic", Verdana, sans-serif;
+    text-align: left;
+    text-decoration: underline;
+}
+#Leader{
+    position: relative;
+    background-color: #BF9000;
+    float: right;
+   
+}
+
+#Leader img {
+    width: 75%;
+}
+
+/*w3Schools, “CSS ::first-letter Selector,” CSS ::First-letter selector, n.d.. [Online]. Available: https://www.w3schools.com/cssref/sel_firstletter.php. [Accessed: 10-Feb-2023]. */
+.firstPara::first-letter{
+    font-size: 4rem;
+    color: #BF9000;
+    font-family: 'Times New Roman', Times, serif;
+}

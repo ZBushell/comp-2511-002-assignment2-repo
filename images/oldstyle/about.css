@@ -1,0 +1,32 @@
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    padding: 0.25em;
+}
+
+.tablebio {
+    width: 30em;
+}
+
+.tablefigure {
+    width: 15em;
+}
+
+#tablehead {
+    text-align: center;
+    font-size: 1em;
+}
+
+table tr:nth-child(even) {
+    background-color: #faebbe;
+}
+
+section>p::first-letter{
+    font-size: 2rem;
+    color: #BF9000;
+    font-family: 'Times New Roman', Times, serif;
+}

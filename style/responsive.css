@@ -1,7 +1,6 @@
-p {
-  color: orange;
-  background-color: orange;
-  font-family: "comic sans", sans-serif;
+html, body {
+  margin: 0%;
+  height: 100%;
 }
 
 /*Common settings for the background display*/
@@ -11,16 +10,129 @@ p {
   flex-direction: column;
 }
 
-#ribbon {
-  background-color: blue;
-}
-
-#header {
-  background-image: none;
+header {
+  background-image: url("../images/banner.jpg");
+    /* Photograph by j4p4n, distributed under a CC0 1.0 license. */
 }
 
 #main {
   background-color: whitesmoke;
 }
+
+@media screen and (max-width: 589px) {
+
+  html {
+    width: 100%;
+    height: 100%;
+    margin:0%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  header nav {
+    background-color: #bbf1ff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+  nav .logo {
+    width: 20%;
+    justify-self: left;
+    padding:1%;
+    height: 100%;
+  }
+  nav .navBlocks {
+    width: 60%;
+  }
+
+  nav .spacefiller {
+    width: 20%;
+  }
+  
+  .pageHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .pageHeading img {
+    width: 50%;
+  }
+
+  nav .navBlocks {
+    float: center;
+  }
+
+  article img {
+    height: 5em;
+    float: center;
+  }
+
+  .logo .logoimg {
+    height: 100%;
+  }
+  .navBlocks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navBlocks a {
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    padding: 4px;
+  }
+
+  .navBlocks a:hover {
+    background-color: #BF9000;
+  }
+
+  header figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main article {
+    margin: 1em;
+    background-color: #fff6d1;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .contactForm{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #BF9000;
+    height: 10em;
+    margin-top: 1em;
+  }
 
 }

@@ -1,0 +1,15 @@
+fieldset{
+    border-color: #45818E;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+dl {
+    font-family: Arial, "Century Gothic", Verdana, sans-serif;
+}
+
+input[required]{
+    background-color: antiquewhite;
+    border-color: red;
+}
