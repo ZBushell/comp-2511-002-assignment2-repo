@@ -261,3 +261,123 @@ header {
   }
 
 }
+/*Large Layout*/
+@media screen and (min-width: 790px){
+
+  /*Change images*/
+  #bigImg{
+    display: none;
+  }
+  #smallImg{
+    display: block;
+  }
+
+  .smallLogoImg{
+    display: block;
+  }
+
+  .logoimg{
+    display: none;
+  }
+  .spacefiller{
+    display: none;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
+ 
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-color: red;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  nav a{
+    display: block;
+  }
+  .navBlocks{
+    background-color: #BF9000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+  }
+  .pageHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*CSS for the main element*/
+  main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  main article{
+      display: flex;
+      flex-direction: column;
+      margin: 0%;
+      padding:1rem ; 
+      background-color: #fff6d1;
+  }
+
+  .contactForm{
+      padding-left: 20%;
+      padding-right: 20%;
+
+      display: flex;
+      flex-direction: column;
+  }
+  .formControlButtons{
+      display: flex;
+      flex-direction: row-reverse;  
+      margin-top: 1rem; 
+  }
+
+
+  /*footer element css*/
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+  }
+  .pageHeading{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+}
