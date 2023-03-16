@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>signup form</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="authors" content="z.Bushell, a.Pefanis" />
+    <meta name="keywords" content="careers,employees,workers,tasks"/>
+    <link rel="styleSheet" href="../style/lightMode.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <!--This is an HTML comment in place to fulfill asignment guidelines!-->
+
+  </head>
+  <body>   
+    <header>
+        
+      <nav>
+        
+          <div class="logo">
+            <img class="smallLogoImg" src="../images/LogoDark-Small.png" alt="Small company logo">
+            <img class="logoimg" src="../images/LogoLight.png" alt="Company logo">
+          </div>    
+          <div class = "navBlocks">
+            <a  href="../index.html">Home</a>
+            <a href="../pages/aboutus.html">About Us</a>
+            <a class="selected" href="../pages/signupform.html">Join Us!</a>
+        </div>  
+        <div class="spacefiller"></div>
+      </nav>
+      <div class="pageHeading">
+          <h1>B&P Design Co.</h1>
+          <p>Barely competent web design on a budget!</p>
+          <figure id="Leader">
+            <a target="_self" href="https://www.youtube.com/watch?v=OjNpRbNdR7E">
+              <img src="../images/FounderPortait.jpg" alt="Joshua McWebdesign - Our beloved founder" >
+              <!--AI-Generated Image, by NightCafe, 2023, nightcafe.studio -->
+              <figcaption>The Glorious Leader</figcaption>
+            </a>
+          </figure>
+          <h1>Join Us</h1>
+          <ul>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#personalInfoFieldset">Personal Information</a></li>
+          </ul> 
+          <p>Once you join up, there's no turning back. Don't say I didn't warn you.</p>
+      </div>
+    </header>
+    <main class="formMain">
+        <form>
+          <fieldset id="qualifications">
+            <legend>Qualifications</legend>
+            <dl>
+              <dt>Max Educational Attainment:</dt>
+                        <dd>
+                            <input type="radio" id="diploma" name="degreetype" value="1" />
+                            <label for="diploma">Diploma</label><br/>
+                            <input type="radio" id="certificate" name="degreetype" value="2" />
+                            <label for="certificate">Certificate</label><br/>
+                            <input type="radio" id="bachelors" name="degreetype" value="3" />
+                            <label for="bachelors">Bachelor's Degree</label><br/>
+                            <input type="radio" id="masters" name="degreetype" value="4" />
+                            <label for="masters">Master's Degree</label><br/>
+                            <input type="radio" id="doctorate" name="degreetype" value="5" />
+                            <label for="doctorate">Doctorate Degree</label><br/>
+                            <input type="radio" id="none" name="degreetype" value="5" />
+                            <label for="none">No Degree/Not Applicable</label><br/><br/>
+                        </dd>
+                <dt>Current date (Knowing the current date is a necessary requirement):</dt>
+                <dd>
+                  <input type="date" name="currentdate"/><br/><br/>
+                </dd>
+                <dt>Select any programming languages you are proficient in:</dt>
+                        <dd>
+                            <input type="checkbox" name="skills" value="1" id="java"/>
+                            <label for="java">Javascript</label><br/>
+                            <input type="checkbox" name="skills" value="2" id="c"/>
+                            <label for="c">C/C#/C++</label><br/>
+                            <input type="checkbox" name="skills" value="3" id="htmllanguage"/>
+                            <label for="htmllanguage">HTML</label><br/>
+                            <input type="checkbox" name="skills" value="4" id="python"/>
+                            <label for="python">Python</label><br/>
+                            <input type="checkbox" name="skills" value="5" id="scratch"/>
+                            <label for="scratch">Scratch</label><br/>
+                            <input type="checkbox" name="skills" value="6" id="commandblocks"/>
+                            <label for="commandblocks">Minecraft Command Blocks</label><br/>
+                        </dd>
+              <dt>Please explain what you think you can bring to the firm:</dt>
+              <dd>
+                <textarea name="applicantStory" rows="8" cols="50"></textarea>
+              </dd>
+            </dl>
+          </fieldset>
+          <!--Adding personal information for job application.-->
+          <fieldset id="personalInfoFieldset">
+            <legend>Personal Information</legend>
+            <dl>
+              <dt>Name:</dt>
+              <dd>
+                 <!--M. Shokeen, “Form input validation using only HTML5 and regex,” Code Envato Tuts+, 26-Mar-2021. [Online]. Available: https://code.tutsplus.com/tutorials/form-input-validation-using-only-html5-and-regex--cms-33095. [Accessed: 23-Jan-2023].-->
+                 <input type="text" name="applicantName" placeholder="Jane Doe" required pattern="^[a-zA-Z a-zA-Z]{2,20}$" maxlength="200">
+              </dd>
+              <dt>Address:</dt>
+              <dd>
+                <input type="text" name="address" placeholder="45 Madeup drive, Calgary,AB,T3C2X6" maxlength="200">
+              </dd>
+              <dt>Phone Number:</dt>
+                <!--CodexWorld, “Phone number validation with HTML5,” CodexWorld, 18-Aug-2017. [Online]. Available: https://www.codexworld.com/how-to/phone-number-validation-html5/. [Accessed: 23-Jan-2023].-->
+              <dd>
+                <input type="tel" name="number" placeholder="000-000-0000" pattern="^\d{3}-\d{3}-\d{4}$">
+              </dd>
+                <!--A. Chakravarthy, “HTML5 email input pattern attribute,” Stack Overflow, 09-Dec-2013. [Online]. Available: https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute#20461010. [Accessed: 23-Jan-2023].-->
+              <dt>Email Address:</dt>
+              <dd>
+                <input type="email" name="mail" placeholder="someone@Example.com" required pattern="^[a-z0-9._%+-]+@[a-z]+\.[a-z]{2,4}$">
+              </dd>
+            </dl>
+            </fieldset>
+            <div class="formControlButtons">
+              <input type="submit"> <input type="reset">
+            </div>
+          </form> 
+    </main>
+    <footer>
+      <p class="copyrightInfo">Copyright 2023 B&P Design</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>

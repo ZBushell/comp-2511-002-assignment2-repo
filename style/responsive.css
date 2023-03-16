@@ -1,6 +1,7 @@
 html, body {
   margin: 0%;
   height: 100%;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Common settings for the background display*/
@@ -14,19 +15,52 @@ header {
   background-image: url("../images/banner.jpg");
     /* Photograph by j4p4n, distributed under a CC0 1.0 license. */
 }
+nav{
+  background-color: #45818E;
+}
+.navBlocks a:hover {
+  background-color: #BF9000;
+}
 
 #main {
   background-color: whitesmoke;
+}
+footer{
+  background-color: #45818E;   
+  
+}
+footer a{
+  color: whitesmoke;
+}
+.copyrightInfo{
+  color: whitesmoke;
+}
+main article, form{
+  background-color: #fff6d1;
 }
 
 /*Small size arrangement*/
 @media screen and (max-width: 589px) {
 
-  html {
-    width: 100%;
-    height: 100%;
-    margin:0%;
+  /*Change images*/
+  #bigImg{
+    display: block;
   }
+  #smallImg{
+    display: none;
+  }
+
+  .smallLogoImg{
+    display: none;
+  }
+
+  .logoimg{
+    display: block;
+  }
+  .spacefiller{
+    display: block;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
 
   body {
     display: flex;
@@ -36,7 +70,6 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
   }
 
   header nav {
@@ -97,11 +130,9 @@ header {
     padding: 6px;
   }
 
-  .navBlocks a:hover {
-    background-color: #BF9000;
-  }
+ 
 
-  header figure {
+  header figure a {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -115,7 +146,6 @@ header {
 
   main article {
     margin: 1em;
-    background-color: #fff6d1;
     border-radius: 10px;
     padding-left: 2%;
     padding-right: 2%;
@@ -140,124 +170,250 @@ header {
 
 }
 
-/*For MEDIUM sized devices */
-@media screen and (min-device-width: 590px) and (max-device-width: 789px) {
+/*Medium Layout*/
+@media screen and (min-width: 590px) and (max-width: 789px){
 
-  html {
+  /*Change images*/
+  #bigImg{
+    display: none;
+  }
+  #smallImg{
+    display: block;
+  }
+
+  .smallLogoImg{
+    display: block;
+  }
+
+  .logoimg{
+    display: none;
+  }
+  .spacefiller{
+    display: none;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
+ 
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav{
     width: 100%;
-    height: 100%;
-    margin:0%;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  header nav {
-    background-color: #bbf1ff;
-    flex-grow: 1;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
   }
-
-  nav .logo {
-    width: 60%;
-    justify-self: left;
-    padding:1%;
-    height: 100%;
+  .navBlocks{
+    background-color: #e4e4e4;
+    color: #BF9000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   width: 30%;
+   height: 30%;
+    margin: 10px;
   }
-  nav .navBlocks {
-    width: 40%;
+  header a{
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-decoration: none;
   }
-
-  nav .spacefiller {
-    width: 0%;
-  }
-  
   .pageHeading{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-}
-
-  .pageHeading img {
-    width: 50%;
   }
-
-  nav .navBlocks {
-    float: center;
+  .pageHeading p{
+    font-size: 1.5rem;
   }
-
-  article img {
-    height: 5em;
-    float: center;
-  }
-
-  .logo .logoimg {
-    height: 100%;
-  }
-  .navBlocks {
+  header figure{
     display: flex;
-    justify-content: space-around;
-  }
-
-  .navBlocks a {
-    background-color: #e4e4e4;
-    border-radius: 10px;
-    padding: 6px;
-  }
-
-  .navBlocks a:hover {
-    background-color: #BF9000;
-  }
-
-  header figure {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  main {
+
+
+  /*CSS for the main element*/
+  main{
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  main article {
-    margin: 1em;
-    background-color: #fff6d1;
-    border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .contactForm{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
     justify-content: center;
     align-items: center;
-    background-color: #BF9000;
-    height: 10em;
-    margin-top: 1em;
+  }
+  main article{
+      display: flex;
+      flex-direction: column;
+      margin: 0%;
+      padding:1rem ; 
+  }
+  .formMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactForm{
+      padding-left: 20%;
+      padding-right: 20%;
+
+      display: flex;
+      flex-direction: column;
+  }
+  .formControlButtons{
+      display: flex;
+      flex-direction: row-reverse;  
+      margin-top: 1rem; 
+  }
+  /*footer element css*/
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
   }
 
-  footer * {
-    padding-right: 1em;
+}
+
+/*Large Layout*/
+@media screen and (min-width: 790px){
+
+  /*Change images*/
+  #bigImg{
+    display: none;
+  }
+  #smallImg{
+    display: block;
+  }
+
+  .smallLogoImg{
+    display: block;
+  }
+
+  .logoimg{
+    display: none;
+  }
+  .spacefiller{
+    display: none;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
+ 
+  body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBlocks{
+    background-color: #e4e4e4;
+    color: #BF9000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   width: 40%;
+   height: 25%;
+    margin: 10px;
+  }
+  header a{
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .pageHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pageHeading p{
+    font-size: 1.5rem;
+  }
+  header figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*CSS for the main element*/
+  main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  main article{
+      display: flex;
+      flex-direction: column;
+      margin: 0%;
+      padding:1rem ; 
+  }
+  .formMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactForm{
+      padding-left: 20%;
+      padding-right: 20%;
+
+      display: flex;
+      flex-direction: column;
+  }
+  .formControlButtons{
+      display: flex;
+      flex-direction: row-reverse;  
+      margin-top: 1rem; 
+  }
+  /*footer element css*/
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
   }
 
 }
