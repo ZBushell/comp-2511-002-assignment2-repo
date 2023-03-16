@@ -22,6 +22,26 @@ header {
 /*Small size arrangement*/
 @media screen and (max-width: 589px) {
 
+  /*Change images*/
+  #bigImg{
+    display: block;
+  }
+  #smallImg{
+    display: none;
+  }
+
+  .smallLogoImg{
+    display: none;
+  }
+
+  .logoimg{
+    display: block;
+  }
+  .spacefiller{
+    display: block;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
+ 
   html {
     width: 100%;
     height: 100%;
@@ -142,6 +162,29 @@ header {
 
 /*For MEDIUM sized devices */
 @media screen and (min-device-width: 590px) and (max-device-width: 789px) {
+
+  /*Change images*/
+  #bigImg{
+    display: block;
+  }
+  #smallImg{
+    display: none;
+  }
+
+  .smallLogoImg{
+    display: none;
+  }
+
+  .logoimg{
+    display: block;
+  }
+  .spacefiller{
+    display: block;
+  }
+  /*jmore009, “@media queries and image swapping,” Stack Overflow, 09-Jan-2015. [Online]. Available: https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping. [Accessed: 15-Mar-2023]. */
+ 
+
+
 
   html {
     width: 100%;
@@ -289,34 +332,37 @@ header {
     flex-direction: column;
   }
   header{
-    background-color: red;
-    background-image: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   nav{
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-  }
-  nav a{
-    display: block;
+    background-color: #45818E;
   }
   .navBlocks{
-    background-color: #BF9000;
+    background-color: #e4e4e4;
+    color: #BF9000;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+   width: 25%;
+   height: 25%;
     margin: 10px;
-    gap: 20px;
+  }
+  a{
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
   }
   .pageHeading{
     display: flex;
@@ -366,18 +412,12 @@ header {
       flex-direction: row-reverse;  
       margin-top: 1rem; 
   }
-
-
   /*footer element css*/
   footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;   
-  }
-  .pageHeading{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #45818E;   
   }
 
 }
