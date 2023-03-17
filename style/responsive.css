@@ -45,6 +45,12 @@ figcaption {
   padding: 5px;
 }
 
+.pageHeading ul{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 /*Small size arrangement*/
 @media screen and (max-width: 589px) {
 
